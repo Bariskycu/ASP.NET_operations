@@ -1,0 +1,40 @@
+﻿@model odev._1.Models.Students
+
+@{
+    ViewBag.Title = "Göster";
+}
+
+
+<div>
+    <h1><font color="red">Students</font></h1>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SchoolNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SchoolNo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Listeye Geri Dön", "Index")
+</p>
